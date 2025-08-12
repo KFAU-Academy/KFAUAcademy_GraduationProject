@@ -1,0 +1,149 @@
+.l-wrapper {
+  background: var(--cactus-gradient);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.l-logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.login-container {
+  position: relative;
+  padding: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.login-form {
+  position: relative;
+  gap: 3rem;
+  padding: 40px;
+  background-color: antiquewhite;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.title {
+  padding: 5px;
+  font-weight: 700;
+  font-size: 44px;
+  background: linear-gradient(97.05deg, #99b56c 3.76%, #d06382 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+
+.input-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(219, 62, 133, 0.603);
+  padding: 0.7rem 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.input-icon {
+  font-size: 20px;
+}
+
+.input-container > input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.login-form .button2 {
+  font-size: 18px;
+}
+
+.links {
+  gap: 0.8rem;
+}
+
+/* tüm link yazısının boyutu, yeri */
+.register-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* register sayfasına yönlendiren kısım */
+.register-link a {
+  color: #749145;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* oluşturun üstüne gelince fare altına çizgi çıkartıyor */
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.forgot-password {
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #99b56c;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Şifre görünürlük toggle butonu */
+.password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #99b56c;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle:hover {
+  color: #749145;
+}
+
+
+/* Küçük cihazlar için */
+@media (max-width: 640px) {
+  .login-container {
+    padding: 1rem;
+  }
+  .login-form {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .input-container > input {
+    font-size: 16px;
+  }
+
+  .login-form .button2 {
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

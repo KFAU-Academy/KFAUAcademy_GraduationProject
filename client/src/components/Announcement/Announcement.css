@@ -1,0 +1,122 @@
+.a-wrapper{
+    position: relative;
+    max-width: 100%; 
+
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    z-index: 1;
+
+}
+
+.a-container{
+    position: relative;
+    padding: 25px 5px ;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 98%;
+    overflow: hidden;
+}
+
+.a-head{
+    margin-bottom: 2rem;
+    padding-left:15px ;
+}
+
+/* card ile alakalı bölüm*/
+.a-card{
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+    transition: all 300ms ease-in;
+    box-sizing: border-box;
+}
+
+.a-card>img{
+    width: 100%;
+    object-fit: contain;
+    max-width: 20rem;
+}
+
+.a-card>:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.a-card>:nth-child(3){
+    font-size: 1.3rem;
+}
+.a-card>:nth-child(4){
+    font-size: 1rem;
+    width: 15rem;
+}
+.a-card:hover{
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+        180deg,
+        rgba(115, 19, 88, 0)0%,
+        rgba(97, 249, 114, 0.46)217.91%
+        );
+    box-shadow: 0px 72px 49px -51px rgba(136,160,255,0.21);
+}
+
+.swiper {
+    overflow: visible !important; /* Özgün Swiper stilini geçersiz kılar */
+    padding: 2rem 0;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-horizontal{
+    overflow: visible;
+}
+
+.a-buttons{
+    position: absolute;
+    gap: 1rem;
+    top: -4rem;
+    right: 1.5rem;
+
+}
+
+.a-buttons button{
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+    color: #b6306c;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.a-buttons>:nth-child(1){
+    background-color: #ffd5e8;
+}
+
+.a-buttons>:nth-child(2){
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+}
+/*...*/
+
+
+@media (max-width: 640px) {
+    .a-head{
+        align-items: center;
+    }
+    .a-buttons{
+        position: initial;
+    }
+}

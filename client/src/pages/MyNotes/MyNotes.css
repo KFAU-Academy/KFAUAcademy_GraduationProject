@@ -1,0 +1,254 @@
+/* Ana Wrapper */
+.mn-wrapper {
+  background: var(--cactus-gradient);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content Wrapper */
+.notes-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap; /* Küçük ekranlar için sarma */
+}
+
+/* Sidebar */
+.notes-sidebar {
+  background-color: antiquewhite;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Sidebar küçülmesin */
+}
+
+/* Container */
+.notes-container {
+  flex: 1;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Note Kartları */
+.main {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  background-color: rgb(247, 223, 191);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.card f {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #749145; /* Açık yeşil renk */
+}
+
+.card p {
+  font-size: 14px;
+  color: #749145;
+}
+
+/* Add Note Kartı */
+.add-note-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #749145;
+  border: 2px dashed #749145;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.add-note-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.add-note-card:hover {
+  background-color: rgba(116, 145, 69, 0.1);
+}
+/* Dropdown için temel stil */
+.mn-dropdown-container {
+  margin: 10px 0;
+}
+
+.mn-dropdown-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Option hover background renk değişimi */
+.mn-dropdown-select option {
+  background-color: antiquewhite;
+  color: #333;
+}
+
+.mn-dropdown-select option:hover {
+  background-color: rgb(41, 160, 41);  /* Hoverda yeşil arka plan */
+  color: #333;
+}
+.mn-error-message{
+  color: rgb(215, 34, 34);
+  font-size: 16px;
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+/* Modal İçerik */
+.modal-content {
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+}
+
+.upload-button {
+  background-color: #749145;
+  color: antiquewhite;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #5a7032;
+}
+
+.notes-cancel-button {
+  background-color: #d06382;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notes-cancel-button:hover {
+  background-color: #b1526c;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .notes-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notes-sidebar {
+    width: 100%;
+    max-width: 400px;
+    
+  }
+
+  .notes-container {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notes-content-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .notes-sidebar,
+  .notes-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .add-note-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  .upload-button,
+  .notes-cancel-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

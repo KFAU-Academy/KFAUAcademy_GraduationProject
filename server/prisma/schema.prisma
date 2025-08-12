@@ -1,0 +1,65 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+    id                 String         @id @default(auto()) @map("_id") @db.ObjectId
+    username           String?
+    email              String         @unique
+    password           String //kontrol edilecek , authentication zamanında
+    fullName           String
+    schoolNumber       String?
+    department         String?
+    favVideosID        String[]       @db.ObjectId
+    favNotesID         String[]       @db.ObjectId
+    ownedVideos        Video[]        @relation("Owner")
+    ownedNotes         Note[]         @relation("Owner")
+    ownedAnnouncements Announcement[] @relation("Owner")
+}
+
+model Video {
+    id         String   @id @default(auto()) @map("_id") @db.ObjectId
+    courseName String
+    image      String
+    videoTitle String
+    videoUrl   String
+    userEmail  String
+    owner      User     @relation("Owner", fields: [userEmail], references: [email])
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+
+    @@unique(fields: [videoUrl])
+}
+
+model Note {
+    id         String   @id @default(auto()) @map("_id") @db.ObjectId
+    courseName String
+    image      String   @default("note_icon.png") //sabit resim
+    noteTitle  String
+    noteUrl    String
+    userEmail  String
+    owner      User     @relation("Owner", fields: [userEmail], references: [email])
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+
+    @@unique(fields: [noteUrl])
+}
+
+model Announcement {
+    id        String   @id @default(auto()) @map("_id") @db.ObjectId
+    category  String
+    image     String?
+    title     String
+    content   String
+    userEmail String
+    owner     User     @relation("Owner", fields: [userEmail], references: [email])
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@unique(fields: [title])
+}

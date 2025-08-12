@@ -1,0 +1,263 @@
+.mv-wrapper {
+  background: var(--cactus-gradient);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ma-main{
+  /* İçerik düzeni: Sol menü ve ana içeriği yan yana hizalar */
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.ma-container{
+  position: relative;
+  padding: 25px 25px ;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  width: 98%;
+  overflow: hidden;
+}
+
+.ma-head{
+  padding-left:15px ;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ma-head .add-button{
+  border: none;
+  border-radius: 15px;
+  background:transparent;
+  padding: 0.6rem 0.5rem;
+  gap: 0.8rem;
+  transition: all 300ms ease-in;
+  font-weight: 600;
+  font-size: 16px;
+  color: #b6306c;
+  max-width: 15rem;
+}
+
+.ma-head .add-button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #6da85d;
+
+}
+
+.ma-head .add-icon{
+  max-width: 18%;
+}
+
+.add-button>span{
+  flex-wrap: wrap;
+}
+
+.mv-error-message{
+  color: rgb(215, 34, 34);
+  font-size: 16px;
+}
+
+/* card ile alakalı bölüm*/
+.mv-card{
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  transition: all 300ms ease-in;
+  box-sizing: border-box;
+}
+
+.mv-card>img{
+  width: 100%;
+  object-fit: contain;
+  max-width: 20rem;
+}
+
+.mv-card>.mv-input-field{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5a7032;
+}
+
+
+.mv-card>h3{
+  font-size: 1.3rem;
+  color:#5a7032;
+}
+ .mv-card>p{
+  font-size: 1rem;
+  width: 15rem;
+  color: #6da85d;
+} 
+.mv-card>.mv-card-buttons{
+  gap: 0.5rem;
+  
+}
+
+.mv-card:hover{
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+      180deg,
+      rgba(115, 19, 88, 0)0%,
+      rgba(97, 249, 114, 0.46)217.91%
+      );
+  box-shadow: 0px 72px 49px -51px rgba(136,160,255,0.21);
+}
+
+.swiper {
+  overflow: visible !important; /* Özgün Swiper stilini geçersiz kılar */
+  padding: 2rem 0;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-horizontal{
+  overflow: visible;
+}
+
+.ma-buttons{
+  position: absolute;
+  gap: 1rem;
+  top: -3rem;
+  right: 1.5rem;
+}
+
+.ma-buttons button{
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: #b6306c;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ma-buttons>:nth-child(1){
+  background-color: #ffd5e8;
+}
+
+.ma-buttons>:nth-child(2){
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+}
+/*...*/
+
+/* Modal overlay */
+.mv-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal içeriği */
+.mv-modal-content {
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.mv-input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mv-modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+}
+
+.mv-upload-button {
+  background-color: #749145;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mv-upload-button:hover {
+  background-color: #5a7032;
+}
+
+.mv-videos-cancel-button {
+  background-color: #d06382;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mv-videos-cancel-button:hover {
+  background-color: #b1526c;
+}
+
+
+
+@media (max-width: 845px) {
+  .ma-main{
+      flex-wrap: wrap;
+  }
+  .ma-head{
+      align-items: center;
+  }
+  .ma-buttons{
+      position: initial;
+  }
+}
+
+@media (max-width:965px) {
+  .ma-head{
+      gap: 0.4rem;
+  }
+  .ma-head>.primaryText{
+      font-size: 26px;
+  }
+
+  .add-button>.add-icon{
+      max-width: 26%;
+  }
+  .ma-buttons{
+    margin-top: 15px;
+  }
+}
+
+@media (max-width:1120px) {
+  .add-button{
+      gap: 0;
+      max-width: 79px;
+  }
+  .add-button>span{
+      display: none;
+  }
+
+  .add-button>.add-icon{
+      max-width: 28%;
+  }
+}

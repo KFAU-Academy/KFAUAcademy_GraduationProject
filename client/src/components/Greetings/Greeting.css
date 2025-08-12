@@ -1,0 +1,53 @@
+.g-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.g-container{
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+
+
+    color: #501731;
+    gap: 2rem;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    text-decoration: none;
+    
+
+}
+
+.g-container .greet-text{
+    text-align: 'center';
+    margin-top: '20vh';
+    animation: fadeIn 2s ease-out;}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+/*  responsiveness  */
+@media (max-width: 768px) {
+  .g-container {
+    font-size: 53px;  
+  }
+
+}
+
+@media (max-width: 480px) {
+  .g-container {
+    font-size: 40px;  
+  }
+}
+

@@ -1,0 +1,20 @@
+.h-wrapper{
+    background: var(--cactus-gradient);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .h-wrapper{
+        background: var(--cactus-gradient);
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .g-wrapper{
+        margin-top: 300px;
+    }
+
+}

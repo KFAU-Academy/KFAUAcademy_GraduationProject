@@ -1,0 +1,218 @@
+/* tüm sayfa */
+.r-wrapper {
+  background: var(--cactus-gradient);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.l-logo{
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.register-container{
+  position: relative;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.title{
+  padding: 5px;
+  font-weight: 700;
+  font-size: 44px;
+  background: linear-gradient(97.05deg,#99b56c 3.76%,  #d06382 100%);  
+  -webkit-background-clip: text; 
+  color: transparent; 
+  background-clip: text;
+}
+
+/* Kayıt formu alanı */
+.register-form {
+  position: relative;
+  gap: 3rem;
+  padding: 40px;
+  background-color: antiquewhite;
+  width: 100%;
+  max-width: 750px;
+  overflow: hidden;
+}
+
+/* Form başlığı */
+.register-form h2 {
+  font-size: 29px; 
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+/* Input alanları */
+.register-input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Kayıt ol butonu 
+.r-button2 {
+  padding: 10px 50px;
+  background-color: #e762a9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size:16px;
+}
+
+.r-button2:hover {
+  background-color: #e55da5;
+} */
+
+/* Login link */
+.register-login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-login-link a {
+  color: #749145;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-login-link a:hover {
+  text-decoration: underline;
+}
+/* Kullanıcı adı hatası */
+.register-name-error {
+  color: rgb(246, 14, 14);
+  font-size: 17px;
+  margin-top: -5px; 
+  text-align: center;
+  font-weight: bold;
+}
+
+/* E-posta hatası */
+.register-mail-error {
+  color: rgb(246, 14, 14);
+  font-size: 17px;
+  margin-top: -5px; 
+  text-align: center;
+  font-weight: bold; 
+}
+
+/* Şifre hatası */
+.register-password-error {
+  color: rgb(246, 14, 14);
+  font-size: 17px;
+  margin-top: -5px; 
+  text-align: center;
+  font-weight: bold; 
+}
+
+/* Şifre tekrar hatası */
+.register-confirm-password-error {
+  color: rgb(246, 14, 14);
+  font-size: 17px;
+  margin-top: -5px; 
+  text-align: center;
+  font-weight: bold; 
+}
+
+/* Form genel hatası */
+.register-form-error {
+  color: #fa1313; 
+  font-size: 16px; 
+  margin-top: 10px; 
+  font-weight: bold; 
+  text-align: center; 
+  padding: 10px; 
+  background-color: #ffe6e6; 
+  border-radius: 5px; 
+}
+
+.input-wrapper {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(219, 62, 133, 0.603);
+  padding: 0.7rem 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.input-wrapper>input{
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.input-icon {
+  font-size: 20px;
+  color: #99b56c; 
+}
+
+.register-form .button2{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Küçük cihazlar için */
+@media (max-width: 640px) {
+  .register-container {
+    padding: 1rem;  
+  }
+  .register-form{
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 30px; 
+  }
+
+  .input-wrapper > input {
+    font-size: 16px; 
+  }
+
+  .register-form .button2 {
+    padding: 0.5rem 1.2rem;  
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+/* Şifre görünürlük toggle butonu */
+.password-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #99b56c;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle:hover {
+  color: #749145;
+}

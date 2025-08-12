@@ -1,0 +1,122 @@
+[
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f01"
+       },
+      "courseName": "Operating Systems",
+      "image": "note_icon.png",
+      "noteTitle": "Memory Management",
+      "noteUrl": "https://notes.edu/mem-mgmt",
+      "userEmail": "falia@demo.io",
+      "createdAt": { "$date": "2023-04-14T10:38:48.762Z" },
+      "updatedAt": { "$date": "2023-04-14T10:38:48.762Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f02"
+       },
+      "courseName": "Database Systems",
+      "image": "note_icon.png",
+      "noteTitle": "Normalization Rules",
+      "noteUrl": "https://notes.edu/db-normalization",
+      "userEmail": "roven@demo.io",
+      "createdAt": { "$date": "2023-04-15T11:12:30.000Z" },
+      "updatedAt": { "$date": "2023-04-15T11:12:30.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f03"
+       },
+      "courseName": "Computer Networks",
+      "image": "note_icon.png",
+      "noteTitle": "TCP/IP Model",
+      "noteUrl": "https://notes.edu/tcp-ip",
+      "userEmail": "selren@demo.io",
+      "createdAt": { "$date": "2023-04-15T14:08:00.000Z" },
+      "updatedAt": { "$date": "2023-04-15T14:08:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f04" 
+      },
+      "courseName": "Software Engineering",
+      "image": "note_icon.png",
+      "noteTitle": "Agile vs Waterfall",
+      "noteUrl": "https://notes.edu/agile-waterfall",
+      "userEmail": "mirel@demo.io",
+      "createdAt": { "$date": "2023-04-16T09:00:00.000Z" },
+      "updatedAt": { "$date": "2023-04-16T09:00:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f05" 
+      },
+      "courseName": "Artificial Intelligence",
+      "image": "note_icon.png",
+      "noteTitle": "Search Algorithms",
+      "noteUrl": "https://notes.edu/search-ai",
+      "userEmail": "davin@demo.io",
+      "createdAt": { "$date": "2023-04-16T11:30:00.000Z" },
+      "updatedAt": { "$date": "2023-04-16T11:30:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f06"
+       },
+      "courseName": "Data Structures",
+      "image": "note_icon.png",
+      "noteTitle": "Linked Lists Explained",
+      "noteUrl": "https://notes.edu/linked-lists",
+      "userEmail": "zaela@demo.io",
+      "createdAt": { "$date": "2023-04-17T08:40:00.000Z" },
+      "updatedAt": { "$date": "2023-04-17T08:40:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f07"
+      },
+      "courseName": "Computer Architecture",
+      "image": "note_icon.png",
+      "noteTitle": "Instruction Cycle",
+      "noteUrl": "https://notes.edu/instruction-cycle",
+      "userEmail": "tharon@demo.io",
+      "createdAt": { "$date": "2023-04-17T13:45:00.000Z" },
+      "updatedAt": { "$date": "2023-04-17T13:45:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f08"
+       },
+      "courseName": "Human Computer Interaction",
+      "image": "note_icon.png",
+      "noteTitle": "Usability Principles",
+      "noteUrl": "https://notes.edu/hci-usability",
+      "userEmail": "eylis@demo.io",
+      "createdAt": { "$date": "2023-04-18T10:00:00.000Z" },
+      "updatedAt": { "$date": "2023-04-18T10:00:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f09"
+       },
+      "courseName": "Cybersecurity",
+      "image": "note_icon.png",
+      "noteTitle": "Encryption Basics",
+      "noteUrl": "https://notes.edu/encryption-basics",
+      "userEmail": "naren@demo.io",
+      "createdAt": { "$date": "2023-04-18T14:00:00.000Z" },
+      "updatedAt": { "$date": "2023-04-18T14:00:00.000Z" }
+    },
+    {
+      "_id": { 
+        "$oid": "64392d39dfd90fb29e464f10"
+       },
+      "courseName": "Compiler Design",
+      "image": "note_icon.png",
+      "noteTitle": "Parsing Techniques",
+      "noteUrl": "https://notes.edu/parsing",
+      "userEmail": "valrin@demo.io",
+      "createdAt": { "$date": "2023-04-19T09:00:00.000Z" },
+      "updatedAt": { "$date": "2023-04-19T09:00:00.000Z" }
+    }
+  ]

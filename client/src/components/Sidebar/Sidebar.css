@@ -1,0 +1,51 @@
+.sidebar {
+    /* Sol tarafta duyurularım, kurslarım vb. içeren menü */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+.sidebar-item {
+    /* Sol menüdeki öğeler */
+    display: flex;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sidebar-item>button{
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border: none;
+}
+
+.sidebar-item>:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.sidebar-item:hover {
+    /* Sol menü öğesi üzerine gelindiğinde arka plan değişikliği */
+    background: linear-gradient(
+          180deg,
+          rgba(198, 234, 141, 0.537)50%,
+          rgba(144, 203, 50, 0.562)217.91%
+          );
+}

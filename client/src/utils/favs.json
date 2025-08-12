@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Automata Theory Decidable Languages",
+      "date": "07.12.2025",
+      "creator": "Beyza Şimşek",
+      "image": "./video_icon.png"
+    },
+    {
+        "title": "Introduction to JavaScript",
+        "date": "04.11.2025",
+        "creator": "Ferzan Kara",
+        "image": "./video_icon.png"
+    },
+    {
+        "title": "Computer Organization Instructions",
+        "date": "08.10.2025",
+        "creator": "John Doe",
+        "image": "./video_icon.png"
+    },
+    {
+        "title": "SQL Queries",
+        "date": "01.06.2025",
+        "creator": "Jane Doe",
+        "image": "./note_icon.png"
+    },
+    {
+      "title": "HTML5 - Part5",
+      "date": "11.12.2024", 
+      "creator": "Jane Doeb",
+      "image": "./video_icon.png"
+    },
+    
+    {
+        "title": "Operating Systems My Sample Questions",
+        "date": "01.12.2024",
+        "creator": "JaneJone Doe",
+        "image": "./note_icon.png"
+    },
+    {
+        "title": "Linear Algebra Unit 4",
+        "date": "08.11.2024",
+        "creator": "John Doe",
+        "image": "./note_icon.png"
+    },
+    {
+        "title": "Tips on UI/UX Design",
+        "date": "27.10.2024",
+        "creator": "Some Lady",
+        "image": "./note_icon.png"
+    },
+    {
+        "title": "Making Responsive Website Using React",
+        "date": "16.08.2024",
+        "creator": "Some Guy",
+        "image": "./video_icon.png"
+    }
+    
+]

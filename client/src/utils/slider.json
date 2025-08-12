@@ -1,0 +1,74 @@
+[
+    {
+      "title": "My New Automata Theory Turing Machine Course!",
+      "date": "07.12.2025",
+      "creator": "Beyza Şimşek",
+      "image": "./course_icon.png"
+    },
+    {
+      "title": "AI Seminar by Expert Trainers!",
+      "date": "04.11.2025", 
+      "creator": "Robotics and Software Club",
+      "image": "./club_icon.png"
+    },
+    {
+        "title": "2025 Spring Semester Midterm Exam Schedule",
+        "date": "08.10.2025",
+        "creator": "Konya Food and Agriculture University",
+        "image": "./uni_icon.png"
+    },
+    {
+        "title": "Meeting Event!",
+        "date": "01.06.2025",
+        "creator": "Psychology Club",
+        "image": "./club_icon.png"
+    },
+    {
+        "title": "Update on My JavaScript Course!",
+        "date": "11.12.2024",
+        "creator": "Ferzan Kara",
+        "image": "./course_icon.png"
+    },
+    {
+        "title": "New Game Event!",
+        "date": "01.12.2024",
+        "creator": "E-Sport Club",
+        "image": "./club_icon.png"
+    },
+    {
+        "title": "2024 Fall Semester Midterm Exam Schedule",
+        "date": "08.11.2024",
+        "creator": "Konya Food and Agriculture University",
+        "image": "./uni_icon.png"
+    },
+    {
+        "title": "Unreal Engine Making Landscape Tutorial!",
+        "date": "27.10.2024",
+        "creator": "Some Lady",
+        "image": "./course_icon.png"
+    },
+    {
+        "title": "Assembly Tutorial!",
+        "date": "16.08.2024",
+        "creator": "Some Guy",
+        "image": "./course_icon.png"
+    },
+    {
+        "title": "Meeting Event!",
+        "date": "01.11.2023",
+        "creator": "Photography Club",
+        "image": "./club_icon.png"
+    },
+    {
+        "title": "Orientation Meeting!",
+        "date": "09.09.2023",
+        "creator": "Konya Food and Agriculture University",
+        "image": "./uni_icon.png"
+    },
+    {
+        "title": "Preparatory Exam Results!",
+        "date": "22.08.2023",
+        "creator": "Konya Food and Agriculture University",
+        "image": "./uni_icon.png"
+    }
+]

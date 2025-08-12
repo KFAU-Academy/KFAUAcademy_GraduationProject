@@ -1,0 +1,256 @@
+:root {
+    --primary: #1f3e72;
+    --secondary: rgba(255, 255, 255, 0.78);
+    --tertiary: rgba(107, 107, 107, 0.78);
+    --black: #131110;
+    --pink-gradient: linear-gradient(97.05deg, #d06382 3.76%, #8f314c 100%);
+    --green-gradient: linear-gradient(270deg, #aaee97 0%, rgb(132, 162, 84) 100%);
+    --bloodyMary-gradient: linear-gradient(97.05deg, #ff512f 3.76%, #dd2476 100%);
+    --cactus-gradient: linear-gradient(97.05deg,#C6EA8D 3.76%,  #FE90AF 100%);
+    --blue: #4066ff;
+    --lightBlue: #eeeeff;
+    --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+    min-height: 100%; 
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Yatay kaydırmayı önler */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+ 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .paddings {
+    padding: 1.5rem;
+  }
+  
+  /*for the responsive feature */
+  .innerWidth {
+    width: 100%;
+  }
+  
+  .flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flexColStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .flexColEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* PuffLoader için özel stil */
+.loader-container {
+  position: fixed; /* Viewport’a göre sabit */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Navbar veya modal’ın üstünde */
+}
+
+  .primaryText {
+    color: #b6306c;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .secondaryText {
+    color: rgb(140 139 139);
+    font-size: 0.9rem;
+  }
+
+  .greenText{
+    color: #506233;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .greenText2{
+    color: #506233;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .purpleText {
+    color: #6e1b40;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+
+  /*BUTON TÜRÜ 1 : Navbar'da kullanılan*/
+  .button{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background: var(--pink-gradient);
+    border: none;
+    border-radius: 12px;
+    transition: all 300ms ease-in;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background: var(--green-gradient);
+  }
+
+  /*BUTON TÜRÜ 2: Login & Register'ta kullanılan*/
+  .button2 {
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    background: transparent;
+    border: 2px solid #d06382;
+    border-radius: 14px;
+    color: #d06382;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* Arka planın genişlemesi */
+  .button2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #d06382;
+    z-index: -1;
+    transition: all 300s ease;
+    transform: scaleX(0); /* Başlangıçta görünmesin */
+    transform-origin: left; /* Soldan büyüsün */
+  }
+  
+  /* Hover sırasında arka plan genişlemesi */
+  .button2:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /* Hover sırasında yazıyı beyaza dönüştürme */
+  .button2:hover {
+    color: #99b56c;
+  }
+  
+  /* Butonun aktif durumundaki stil */
+  .button2:active {
+    transform: scale(0.95);
+    background-color: #d06382;
+    color: white;
+  }
+  
+  /* Yazıyı z-index ile ön plana almak */
+  .button2 span {
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  .button2:hover span {
+    color: white;
+  }
+
+  .favbutton {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Kalp hover'da büyüsün */
+.favbutton:hover {
+  transform: scale(1.098);
+}
+
+/* Kalbin rengini değiştirme veya başka efektler */
+.favbutton:hover svg {
+  transition: transform 0.3s ease;
+  transform: scale(1.098);
+}
+  
+  /* media queries */
+  @media (min-width: 1536px) {
+    .innerWidth {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .paddings {
+      padding: 4rem;
+    }
+  }
+  
+  @media (min-width: 1280px), (min-width: 768px) {
+    .paddings {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .primaryText {
+      font-size: 1.8rem;
+    }
+    .orangeText {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .primaryText {
+      font-size: 1.5rem;
+    }
+    
+  }
